@@ -1,0 +1,21 @@
+{
+  "name": "package",
+  "version": "1.0.0",
+  "description": "Proyecto de Analisis y Diseño de Sistemas",
+  "license": "ISC",
+  "author": "David Castillo",
+  "type": "module",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node src/index.js",
+    "dev": "nodemon src/index.js"
+  },
+  "dependencies": {
+    "dotenv": "^17.2.3",
+    "ejs": "^3.1.10",
+    "express": "^5.2.1",
+    "express-ejs-layouts": "^2.5.1",
+    "nodemon": "^3.1.11"
+  }
+}

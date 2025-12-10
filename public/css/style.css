@@ -1,0 +1,39 @@
+.backlogin {
+    background-color: #4751F5;
+    font-family: 'Inter', sans-serif;
+}
+
+.contenedor{
+    height: 600px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.titulo {
+    color: white;
+    size: 40px;
+    text-align: center;
+}
+
+.imguser {
+    height: 200px;
+    width: 200px;
+}
+
+.inputlogin {
+    width: 300px;
+    padding: 10px 14px;
+    border: 1px solid #e0e0e0;
+    border-radius: 6px;
+    background-color: #fafafa;
+    transition: .2s;
+    outline: none;
+}
+
+.links {
+    color: white;
+    text-align: center;
+}
