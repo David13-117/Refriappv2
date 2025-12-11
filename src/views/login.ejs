@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Inicio de Sesion</title>
-    <link rel="stylesheet" type="text/css" href="/public/css/style.css">
+    <link rel="stylesheet" type="text/css" href="/css/style.css">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
 </head>
@@ -14,8 +14,26 @@
         <img src="/img/userlogo1.png" class="imguser" alt="">
         <input type="text" class="inputlogin" id="usertxt" placeholder="Ingresa tú usuario">
         <input type="password" class="inputlogin" id="userpass" placeholder="Ingresa tú contraseña">
-        <button class="btn btn-primary" type="submit" href="#">Iniciar Sesión</button>
+        <button class="btn btn-primary" type="submit" id="btnlogin">Iniciar Sesión</button>
         <a class="links" href="/recuperar">¿Olvidaste tú contraseña?</a>
+        <p id="mensaje" style="color: red; font-weight: bold;"></p>
+
+        <script>
+            document.getElementById("btnlogin").addEventListener("click", () => {
+                const user = document.getElementById("usertxt").value.trim();
+                const pass = document.getElementById("userpass").value.trim();
+                const mensaje = document.getElementById("mensaje");
+
+                if (user === "" || pass === "") {
+                    mensaje.style.color = "red";
+                    mensaje.textContent = "Digite todos los campos.";
+                    return;
+                }
+
+                window.location.href = "/principal";
+            });
+        </script>
+
         
 
 

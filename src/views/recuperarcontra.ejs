@@ -4,14 +4,31 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Recuperar contraseña</title>
-    <link rel="stylesheet" href="/public/css/style.css">
+    <link rel="stylesheet" href="/css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
 </head>
 <body class="backlogin">
     <div class="contenedor">
         <h1 class="titulo">Recuperar Contraseña</h1>
         <input type="email" class="inputlogin" id="emailtxt" placeholder="Ingresa tu correo electrónico">
-        <button class="btn btn-primary" type="submit" href="#">Enviar enlace de recuperación</button>
+        <button class="btn btn-primary" type="submit" id="btnrecu" href="#">Enviar enlace de recuperación</button>
+        <p id="mensaje" style="color: rgb(255, 255, 255); font-weight: bold;"></p>
+        <script>
+            document.getElementById("btnrecu").addEventListener("click", () => {
+                const valor = document.getElementById("emailtxt").value;
+                const mensaje = document.getElementById("mensaje");
+
+                if (valor.trim() === "") {
+                    mensaje.style.color = "red";
+                    mensaje.textContent = "Por favor, ingresa un correo electrónico válido.";
+                    return;
+                }
+
+                mensaje.style.color = "white";
+                mensaje.textContent = "El correo de recuperación ha sido enviado a " + valor + ". Por favor, revisa tu bandeja de entrada.";
+            });
+        </script>
     </div>
-    
 </body>
 </html>

@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Principal</title>
+    <link rel="stylesheet" type="text/css" href="/css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+</head>
+<body class="backlogin">
+    <nav class="navbar">
+        <div class="nvbar-left">
+            <img src="/img/logo.webp" alt="Logo" width="50" height="50">
+            <span>RefriApp</span>
+        </div>
+    
+        <div class="nvbar-right">
+            <span id="username">Bienvenido Raul</span>
+    
+            <div class="user-menu">
+                <img src="/img/userlogo1.png" alt="User" class="user-icon">
+    
+                <ul class="menu-dropdown" id="dropdownMenu">
+                    <li><a href="/#">Perfil</a></li>
+                    <li><a href="/#">Configuración</a></li>
+                    <li><a href="/login">Cerrar sesión</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <script>
+        const userIcon = document.querySelector('.user-icon');
+        const menu = document.getElementById('dropdownMenu');
+
+        userIcon.addEventListener('click', () => {
+            menu.style.display = menu.style.display === "block" ? "none" : "block";
+        });
+
+        document.addEventListener("click", (e) => {
+            if (!e.target.closest(".user-menu")) {
+                menu.style.display = "none";
+            }
+        });
+    </script>
+
+    <div class="contenedor_principal">
+        <a href="/entrega">
+            <div class="tarjeta">
+                <img src="/img/entrega.png" class="cardicon" alt="entrega">
+                <h3 class="cardnom">Registrar entrega</h3>
+            </div>
+        </a>
+        <a href="/#">
+            <div class="tarjeta">
+                <img src="/img/anadiruser.png" class="cardicon" alt="entrega">
+                <h3 class="cardnom">Agregar usuario</h3>
+            </div>
+        </a>
+        <a href="/#">
+            <div class="tarjeta">
+                <img src="/img/buscar.png" class="cardicon" alt="entrega">
+                <h3 class="cardnom">Consultas</h3>
+            </div>
+        </a>
+        <a href="/#">
+            <div class="tarjeta">
+                <img src="/img/inventario.png" class="cardicon" alt="entrega">
+                <h3 class="cardnom">Inventario</h3>
+            </div>
+        </a>
+    </div>
+
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+</body>
+</html>
