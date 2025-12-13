@@ -15,10 +15,10 @@
     <div class="contenedorentrega">
         <div class="tarjetaentrega">
             <h2 class="subtentrega">Registro de Entrega</h2>
-            <img src="/img/huella.png" class="entregaicon" id="huella" alt="huella">
-            <h4 class="subtentrega">coloque su dedo en el lector</h4>
-            <h6 class="subtentrega">¿Problemas con la huella?</h6>
-            <a class="cardnom" href="/entregasc">Usar carnet corporativo</a>
+            <img src="/img/barras.png" class="entregaicon" id="barras" alt="barras">
+            <h4 class="subtentrega">Pon el carnet frente a la camara</h4>
+            <h6 class="subtentrega">¿Problemas con el carnet?</h6>
+            <a class="cardnom" href="/entrega">Usar huella digital</a>
         </div>
     </div>
 
@@ -32,7 +32,7 @@
     </div>
 
     <script>
-        document.getElementById("huella").onclick = function () {
+        document.getElementById("barras").onclick = function () {
             document.getElementById("status").style.display = "flex";
         }
 

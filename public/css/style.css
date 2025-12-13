@@ -149,3 +149,301 @@
     padding-top: 15px;
 }
 
+.bodyentrega {
+    font-family: 'Inter', sans-serif;
+    background-color: #2B2B2B;
+}
+
+.contenedorentrega{
+    height: 500px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.tarjetaentrega {
+    width: 380px;
+    height: 350px;
+    background: #3F3F3F;
+    border-radius: 15px;
+    box-shadow: 0 3px 8px rgba(0,0,0,0.15);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; 
+    text-align: center;
+    gap: 8px;
+}
+
+.entregaicon {
+    width: 100px;
+    height: 100px;
+    margin-bottom: 10px;
+    cursor: pointer;
+}
+
+.subtentrega {
+    color: white;
+    text-align: center;
+    font-family: 'Inter', sans-serif;
+}
+
+.contsalir {
+    width: 100%;
+    display: flex;
+    justify-content: end;
+    padding-top: 15px;
+    padding-right: 15px;
+}
+
+.iconsalir {
+    width: 40px;
+    height: 40px;
+    cursor: pointer;
+}
+
+.entregabien {
+    background-color: #00B14F;
+    font-family: 'Inter', sans-serif;
+}
+
+.entregamal {
+    background-color: #E30613;
+    font-family: 'Inter', sans-serif;
+}
+
+.staentreicon {
+    width: 150px;
+    height: 150px;
+}
+
+.statusentrega {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; 
+    text-align: center;
+    gap: 8px;
+}
+
+.modal {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0.4);
+    justify-content: center;
+    align-items: center;
+    padding-left: 400px;
+    padding-right: 400px;
+}
+
+.modal-content {
+    background: white;
+    padding: 25px;
+    border-radius: 12px;
+    text-align: center;
+    align-items: center;
+    width: 80%;
+    font-size: 16px;
+}
+
+.modal-content button {
+    margin: 10px;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    background: #5564FC;
+    color: white;
+    font-weight: bold;
+}
+
+.modal-content button:hover {
+    background: #3d4de0;
+}
+
+.backanadirusuario {
+    background-color: #E3E3E3;
+    font-family: 'Inter', sans-serif;
+}
+
+.navbaranadirusuario {
+    font-family: 'Inter', sans-serif;
+    font-size: 24px;
+    color: black;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 12px 20px;
+    background-color: #E3E3E3;
+}
+
+.nvbar-leftanadirusuario {
+    display: flex;
+    align-items: center;
+    font-size: 22px;
+    font-weight: bold;
+    gap: 15px;
+}
+
+.iconopantalla {
+    width: 60px;
+    height: 60px;
+}
+
+.tarjetacanadirusuario1 {
+    width: 700px;
+    height: 300px;
+    background: white;
+    border-radius: 15px;
+    box-shadow: 0 3px 8px rgba(0,0,0,0.15);
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center; 
+    text-align: start;
+    margin-right: 30px;
+    gap: 70px;
+}
+
+.tarjetacanadirusuario2 {
+    width: 280px;
+    height: 300px;
+    background: white;
+    border-radius: 15px;
+    box-shadow: 0 3px 8px rgba(0,0,0,0.15);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; 
+    text-align: center;
+}
+
+.anadirhuellaicon {
+    width: 100px;
+    height: 100px;
+    margin-bottom: 10px;
+}
+
+.estado-si {
+    color: green;
+}
+
+.huellaicon {
+    width: 100px;
+    height: 100px;
+    cursor: pointer;
+}
+
+.botones {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    margin-left: 30px;
+    margin-right: 30px;
+    margin-top: 9px;
+}
+
+.error-text {
+    color: red;
+    font-size: 14px;
+    margin-top: 8px;
+    display: none; 
+}
+
+.modal-content.exito {
+    background: white;
+    padding: 30px;
+    border-radius: 15px;
+    text-align: center;
+    width: 320px;
+}
+
+.icon-exito {
+    width: 70px;
+    margin-bottom: 15px;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Inter', sans-serif;
+}
+
+.bg-app {
+    background: #E3E3E3;
+    min-height: 100vh;
+}
+
+.navbar-app {
+    background: #5564FC;
+    color: white;
+    padding: 15px 25px;
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.contenedor {
+    padding: 30px;
+    display: flex;
+    gap: 25px;
+    flex-wrap: wrap;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+}
+
+.card-consulta,
+.card-inventario {
+    background: white;
+    border-radius: 15px;
+    padding: 25px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+    min-width: 250px;
+}
+
+.card-consulta h3,
+.card-inventario h3 {
+    color: #4751F5;
+    margin-bottom: 15px;
+}
+
+.input {
+    width: 100%;
+    padding: 10px;
+    border-radius: 8px;
+    border: 1px solid #B0B0B0;
+    margin-bottom: 15px;
+}
+
+.btn-primary {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 8px;
+    background: #5564FC;
+    color: white;
+    cursor: pointer;
+    font-weight: 600;
+}
+
+.btn-primary:hover {
+    background: #4751F5;
+}
+
+.valor {
+    font-size: 32px;
+    font-weight: bold;
+    color: #5564FC;
+    text-align: center;
+}
+
+

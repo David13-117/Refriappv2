@@ -20,6 +20,12 @@ app.get('/login', (req, res) => res.render('login'));
 app.get('/recuperar', (req, res) => res.render('recuperarcontra'));
 app.get('/principal', (req, res) => res.render('principal'));
 app.get('/entrega', (req, res) => res.render('entregas'));
+app.get('/entregasc', (req, res) => res.render('entregacarnet'));
+app.get('/bien', (req, res) => res.render('entregabien'));
+app.get('/mal', (req, res) => res.render('entregamal'));
+app.get('/registro', (req, res) => res.render('anadirusuario'));
+app.get('/consultas', (req, res) => res.render('consultas'));
+app.get('/inventario', (req, res) => res.render('inventario'));
 
 app.listen(PORT, () =>
     console.log(`Server running on http://localhost:${PORT}`)

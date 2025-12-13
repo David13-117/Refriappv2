@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Entrega</title><link rel="stylesheet" type="text/css" href="/css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+</head>
+<body class="entregabien">
+    <div class="contsalir">
+        <a href="/entrega"><img src="/img/salida.png" class="iconsalir" alt="salir"></a>
+    </div>
+    <div class="contenedorentrega">
+        <div class="statusentrega">
+            <img src="/img/entreok.png" class="staentreicon" alt="check"></a>
+            <h1 class="subtentrega">Autorizado</h1>
+            <h3 class="subtentrega">Juan Alberto Perez Garcia</h3>
+            <h5 class="subtentrega">ID: 4370812</h5>
+            <p class="subtentrega" id="fechahora"></p>
+        </div>
+    </div>
+    <script>
+        const fecha = new Date();
+
+        const opciones = {
+            year: 'numeric',
+            month: 'long',
+            day: 'numeric',
+            hour: '2-digit',
+            minute: '2-digit'
+        };
+
+        const fechaFormateada = fecha.toLocaleString('es-CO', opciones);
+
+        document.getElementById("fechahora").innerText = fechaFormateada;
+    </script>
+</body>
+</html>
